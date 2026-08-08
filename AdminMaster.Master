@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="University.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin Panel - Everest University</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="admin-body">
+    <form id="form1" runat="server">
+
+        <div class="admin-wrapper">
+
+            <!-- SIDEBAR -->
+            <aside class="admin-sidebar">
+
+                <div class="admin-sidebar-title">Admin Panel</div>
+
+                <nav class="admin-nav" id="adminNav">
+                    <a href="admin-dashboard.aspx" data-page="admin-dashboard.aspx"><i class="fa-solid fa-gauge"></i> <span>Dashboard</span></a>
+                    <a href="admin-dashboard.aspx#students" data-page="admin-students"><i class="fa-solid fa-user-graduate"></i> <span>Students</span></a>
+                    <a href="admin-admissions.aspx" data-page="admin-admissions.aspx"><i class="fa-solid fa-file-lines"></i> <span>Admissions</span></a>
+                    <a href="admin-programs.aspx" data-page="admin-programs.aspx"><i class="fa-solid fa-book-open"></i> <span>Programs</span></a>
+                    <a href="admin-faculty.aspx" data-page="admin-faculty.aspx"><i class="fa-solid fa-chalkboard-user"></i> <span>Faculty</span></a>
+                    <a href="admin-events.aspx" data-page="admin-events.aspx"><i class="fa-solid fa-calendar-days"></i> <span>Events</span></a>
+                    <a href="admin-scholarships.aspx" data-page="admin-scholarships.aspx"><i class="fa-solid fa-award"></i> <span>Scholarships</span></a>
+                    <a href="admin-contact.aspx" data-page="admin-contact.aspx"><i class="fa-solid fa-envelope"></i> <span>Contact Messages</span></a>
+                    <a href="admin-gallery.aspx" data-page="admin-gallery.aspx"><i class="fa-solid fa-images"></i> <span>Gallery</span></a>
+                    <a href="admin-settings.aspx" data-page="admin-settings.aspx"><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+                    <a href="#" id="adminLogoutBtn"><i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span></a>
+                </nav>
+
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <div class="admin-main">
+
+                <div class="admin-topbar">
+
+                    <div class="admin-topbar-left">
+                        <img src="images/logo1.png" alt="Everest University" />
+                        <span id="adminTopbarTitle">Admin Panel</span>
+                    </div>
+
+                    <div class="admin-topbar-right">
+                        <div class="admin-topbar-icon">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="admin-badge">3</span>
+                        </div>
+                        <div class="admin-topbar-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="admin-badge">5</span>
+                        </div>
+                        <div class="admin-topbar-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="admin-topbar-divider"></div>
+                        <div class="admin-topbar-user">
+                            <div class="admin-avatar-circle">A</div>
+                            <div class="admin-user-text">
+                                <strong>Admin</strong>
+                                <span>Super Administrator</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="admin-content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderAdmin" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <div class="admin-footer-note">© 2025 Everest University. All Rights Reserved.</div>
+
+            </div>
+
+        </div>
+
+        <script src="js/auth.js"></script>
+        <script src="js/admin-common.js"></script>
+
+    </form>
+</body>
+</html>

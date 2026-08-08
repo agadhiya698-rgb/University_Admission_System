@@ -1,0 +1,297 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\University\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|c:\\users\\lenovo\\source\\repos\\university\\university\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\adminmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\adminmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\admin-dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\admin-dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\studentportal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\studentportal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\admission.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\admission.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\library.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\library.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\programs.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\programs.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\career.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\career.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\scholarships.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\scholarships.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\blog.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\blog.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\faculty.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\faculty.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\campuslife.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\campuslife.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|C:\\Users\\LENOVO\\source\\repos\\University\\university\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3A98E054-6D10-4C81-AE94-FDE3EEEC8463}|University\\University.csproj|solutionrelative:university\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\css\\index.css",
+              "RelativeDocumentMoniker": "University\\css\\index.css",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\css\\index.css",
+              "RelativeToolTip": "University\\css\\index.css",
+              "ViewState": "AgIAACQAAAAAAAAAAAASwC0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-07-21T10:04:11.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminMaster.Master",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\AdminMaster.Master",
+              "RelativeDocumentMoniker": "University\\AdminMaster.Master",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\AdminMaster.Master",
+              "RelativeToolTip": "University\\AdminMaster.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-21T10:03:22.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "studentportal.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\studentportal.aspx",
+              "RelativeDocumentMoniker": "University\\studentportal.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\studentportal.aspx",
+              "RelativeToolTip": "University\\studentportal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-21T08:07:37.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "admin-dashboard.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\admin-dashboard.aspx",
+              "RelativeDocumentMoniker": "University\\admin-dashboard.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\admin-dashboard.aspx",
+              "RelativeToolTip": "University\\admin-dashboard.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-21T03:14:16.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "admission.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\admission.aspx",
+              "RelativeDocumentMoniker": "University\\admission.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\admission.aspx",
+              "RelativeToolTip": "University\\admission.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-18T06:14:26.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "library.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\library.aspx",
+              "RelativeDocumentMoniker": "University\\library.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\library.aspx",
+              "RelativeToolTip": "University\\library.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-18T06:14:22.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "career.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\career.aspx",
+              "RelativeDocumentMoniker": "University\\career.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\career.aspx",
+              "RelativeToolTip": "University\\career.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-18T06:01:48.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "programs.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\programs.aspx",
+              "RelativeDocumentMoniker": "University\\programs.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\programs.aspx",
+              "RelativeToolTip": "University\\programs.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-18T06:01:43.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "scholarships.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\scholarships.aspx",
+              "RelativeDocumentMoniker": "University\\scholarships.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\scholarships.aspx",
+              "RelativeToolTip": "University\\scholarships.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-18T06:01:39.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "blog.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\blog.aspx",
+              "RelativeDocumentMoniker": "University\\blog.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\blog.aspx",
+              "RelativeToolTip": "University\\blog.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-18T05:42:32.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "faculty.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\faculty.aspx",
+              "RelativeDocumentMoniker": "University\\faculty.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\faculty.aspx",
+              "RelativeToolTip": "University\\faculty.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-18T05:42:30.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "events.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\events.aspx",
+              "RelativeDocumentMoniker": "University\\events.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\events.aspx",
+              "RelativeToolTip": "University\\events.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-18T05:27:33.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "campuslife.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\campuslife.aspx",
+              "RelativeDocumentMoniker": "University\\campuslife.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\campuslife.aspx",
+              "RelativeToolTip": "University\\campuslife.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-18T05:27:19.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "contact.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\contact.aspx",
+              "RelativeDocumentMoniker": "University\\contact.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\contact.aspx",
+              "RelativeToolTip": "University\\contact.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-17T13:09:31.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "about.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\about.aspx",
+              "RelativeDocumentMoniker": "University\\about.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\about.aspx",
+              "RelativeToolTip": "University\\about.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-16T13:13:39.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.aspx",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\index.aspx",
+              "RelativeDocumentMoniker": "University\\index.aspx",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\index.aspx",
+              "RelativeToolTip": "University\\index.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-16T12:29:14.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Site1.Master",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\Site1.Master",
+              "RelativeDocumentMoniker": "University\\Site1.Master",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\University\\University\\Site1.Master",
+              "RelativeToolTip": "University\\Site1.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-16T12:20:40.684Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
