@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolder2">
 
-    <!--================ REGISTER (Split Panel Design) =================-->
+    <!--================ REGISTER =================-->
 
     <section class="auth-hero-section">
         <div class="auth-hero-card">
@@ -51,7 +51,7 @@
                     <div class="auth-error" id="registerError" runat="server"></div>
                     <div class="auth-success" id="registerSuccess"></div>
 
-                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="auth-validation-summary" DisplayMode="BulletList" HeaderText="Please fix the following:" />
+                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
 
                     <div class="login-form" id="studentRegisterForm">
 
@@ -66,6 +66,7 @@
 
                         <label>Mobile Number</label>
                         <asp:TextBox ID="regPhone" runat="server" placeholder="Enter your mobile number" OnTextChanged="regPhone_TextChanged"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Please Enter phone number in 10 digits." ControlToValidate="regPhone" Display="None" MaximumValue="10" MinimumValue="10"></asp:RangeValidator>
 
                         <label>Program</label>
                         <asp:DropDownList ID="regCourse" runat="server">
@@ -82,12 +83,12 @@
                             <div>
                                 <label>Password</label>
                                 <asp:TextBox ID="regPassword" runat="server" TextMode="Password" placeholder="Create a password"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="regPassword" Display="None" ErrorMessage="Please enter a password."></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="password" runat="server" ControlToValidate="regPassword" Display="None" ErrorMessage="Please enter a password."></asp:RequiredFieldValidator>
                             </div>
                             <div>
                                 <label>Confirm Password</label>
                                 <asp:TextBox ID="regConfirmPassword" runat="server" TextMode="Password" placeholder="Confirm your password"></asp:TextBox>
-                                <asp:CompareValidator ID="cvConfirmPassword" runat="server" ControlToValidate="regConfirmPassword" ControlToCompare="regPassword" Display="None" ErrorMessage="Password and Confirm Password do not match."></asp:CompareValidator>
+                                <asp:CompareValidator ID="confirmPassword" runat="server" ControlToValidate="regConfirmPassword" ControlToCompare="regPassword" Display="None" ErrorMessage="Password and Confirm Password do not match."></asp:CompareValidator>
                             </div>
                         </div>
 
@@ -96,9 +97,9 @@
                             <label for="regTerms">I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a></label>
                         </div>
                         <%--<asp:ImageButton ID="ImageButton1" runat="server" Height="90px" ImageUrl="~/Register Now.png" Width="600px" />--%>
-                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click"  Text="Register Now -> " BackColor="#A00016" ForeColor="#FFFFCC" Font-Bold="True" />
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Register Now -> " BackColor="#A00016" ForeColor="#FFFFCC" Font-Bold="True" />
 
-<%--                        <asp:LinkButton ID="studentRegisterBtn" runat="server" OnClick="studentRegisterBtn_Click">Register Now <i class="fa-solid fa-arrow-right"></i></asp:LinkButton>--%>
+                        <%--<asp:LinkButton ID="studentRegisterBtn" runat="server" OnClick="studentRegisterBtn_Click">Register Now <i class="fa-solid fa-arrow-right"></i></asp:LinkButton>--%>
                         <%--CssClass="btn-submit-link"--%>
                     </div>
 
@@ -108,8 +109,44 @@
             </div>
 
         </div>
-    </section>
 
+    </section>
+    <div class="grid">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+            <Columns>
+                <asp:TemplateField HeaderText="Id">
+                    <ItemTemplate>
+                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="NAME">
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="PHONE NO">
+                    <ItemTemplate>
+                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("Mobile") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="EMAIL">
+                    <ItemTemplate>
+                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="PROGRAM">
+                    <ItemTemplate>
+                        <asp:Label ID="Label5" runat="server" Text='<%# Eval("Program") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="PASSOWORD">
+                    <ItemTemplate>
+                        <asp:Label ID="Label6" runat="server" Text='<%# Eval("Password") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+        </asp:GridView>
+    </div>
     <script src="js/auth.js"></script>
 
 </asp:Content>

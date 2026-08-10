@@ -22,9 +22,9 @@
             <div class="title-line"></div>
 
             <ul>
-                <li class="active"><a href="#">About Us</a></li>
+                <li><a href="Placement.aspx">About Us</a></li>
                 <li><a href="student-selection.aspx">Student Selection</a></li>
-                <li><a href="#">Prominent Recruiters</a></li>
+                <li><a href="prominent-recruiters.aspx">Prominent Recruiters</a></li>
                 <%-- <li><a href="#">Prominent Recruiters</a></li>--%>
             </ul>
 

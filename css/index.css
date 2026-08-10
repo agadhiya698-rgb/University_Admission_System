@@ -3448,7 +3448,10 @@ nav ul li a.active {
     }
 
 /* Journey Timeline variant - unique design used on the Register page */
-
+.grid{
+    text-align:center;
+    padding-left:150px;
+}
 .auth-side-panel.journey {
     background: linear-gradient(160deg,#fff6f4,#ffe3e0);
 }

@@ -6,7 +6,7 @@
 
     <!--================ PAGE BANNER =================-->
     <section class="page-banner-l">
-        <img src="images/about1.jpg" alt="Banner">
+        <img src="images/library1.jpg" alt="Banner">
     </section>
     <%-- <section class="page-banner has-image">
         <img src="images/about1.jpg" class="banner-bg" alt="Library" />
@@ -74,10 +74,10 @@
         </div>
 
         <div class="campus-life-gallery">
-            <img src="images/about1.jpg" alt="Library" />
-            <img src="images/about.jpg" alt="Library" />
+            <img src="images/library2.jpg" alt="Library" />
+            <img src="images/library3.jpg" alt="Library" />
             <img src="images/campus1.jpg" alt="Library" />
-            <img src="images/about2.jpg" alt="Library" />
+            <img src="images/library4.jpg" alt="Library" />
         </div>
 
     </section>
