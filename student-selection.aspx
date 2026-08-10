@@ -6,7 +6,7 @@
 
     <!--================ PAGE BANNER =================-->
     <section class="page-banner-p">
-        <img src="images/s1.jpeg" alt="Banner">
+        <img src="images/p1.jpeg" alt="Banner">
     </section>
     <%--<section class="page-banner has-image">
         <img src="images/campus3.jpg" class="banner-bg" alt="Student Selection" />
@@ -165,7 +165,7 @@
     <section class="tp-links-row">
         <a href="Placement.aspx">Placement Cell Overview</a>
         <a href="student-selection.aspx" class="active">Student Selection</a>
-        <a href="career.aspx">Careers</a>
+        <a href="prominent-recruiters.aspx">Prominent Recruiters</a>
     </section>
 
     <!--================ CTA BANNER =================-->

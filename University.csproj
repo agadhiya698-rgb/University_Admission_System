@@ -107,6 +107,15 @@
     <Content Include="Images\l7.jpg" />
     <Content Include="Images\l8.png" />
     <Content Include="Images\l9.jpg" />
+    <Content Include="Images\library1.jpg" />
+    <Content Include="Images\library2.jpg" />
+    <Content Include="Images\library3.jpg" />
+    <Content Include="Images\library4.jpg" />
+    <Content Include="Images\p1.jpg" />
+    <Content Include="Images\p2.jpg" />
+    <Content Include="Images\p3.jpg" />
+    <Content Include="Images\p4.jpg" />
+    <Content Include="Images\placement.png" />
     <Content Include="Images\s1.jpeg" />
     <Content Include="Placement.aspx" />
     <Content Include="Register Now.png" />

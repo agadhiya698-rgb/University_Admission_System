@@ -14,13 +14,16 @@ namespace University
     public partial class register : System.Web.UI.Page
     {
         SqlConnection con;   //for connection
-        SqlCommand cmd;      //for insert
+        SqlDataAdapter da;   // for container
+        DataSet ds;     // for select
+        SqlCommand cmd;      //for insert, update, delete
 
-        string s = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString; //for connection string
+        string s = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             getcon();
+            fillgrid();
         }
 
         void getcon()
@@ -59,10 +62,10 @@ namespace University
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (!Page.IsValid)
-            {
-                return;
-            }
+            //if (!Page.IsValid)
+            //{
+            //    return;
+            //}
 
             getcon();
 
@@ -70,9 +73,19 @@ namespace University
             cmd.ExecuteNonQuery();
 
             clear();
+            fillgrid();
 
-            // Registration successful -> send the student to the login page
+            //redirect to login page
             Response.Redirect("login.aspx");
+        }
+        void fillgrid()
+        {
+            getcon();
+            da = new SqlDataAdapter("select * from student_info", con);
+            ds = new DataSet();
+            da.Fill(ds);
+            GridView1.DataSource = ds;
+            GridView1.DataBind();
         }
     }
 }

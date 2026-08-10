@@ -6,7 +6,7 @@
 
     <!--================ PAGE BANNER =================-->
     <section class="page-banner-p">
-        <img src="images/placement.png" alt="Banner">
+        <img src="images/p4.jpg" alt="Banner">
     </section>
     <%--<section class="page-banner">
         <img src="images/campus2.jpg" class="banner-bgp" alt="Placements" />
@@ -34,9 +34,9 @@
             <div class="title-line"></div>
 
             <ul>
-                <li class="active"><a href="#">About Us</a></li>
+                <li class="active"><a href="Placement.aspx">About Us</a></li>
                 <li><a href="student-selection.aspx">Student Selection</a></li>
-                <li><a href="#">Prominent Recruiters</a></li>
+                <li><a href="prominent-recruiters.aspx">Prominent Recruiters</a></li>
                <%-- <li><a href="#">Prominent Recruiters</a></li>--%>
             </ul>
 
@@ -120,12 +120,12 @@
     <section class="recruiters-section">
         <h2>Top Recruiters</h2>
         <div class="recruiter-grid">
-            <div class="recruiter-card">TCS</div>
-            <div class="recruiter-card">Infosys</div>
-            <div class="recruiter-card">Wipro</div>
-            <div class="recruiter-card">Accenture</div>
-            <div class="recruiter-card">Capgemini</div>
-            <div class="recruiter-card">HCL</div>
+            <div class="logo-item"><img src="images/l1.jpg" alt="Recruiter 1"></div>
+            <div class="logo-item"><img src="images/l2.jpg" alt="Recruiter 1"></div>
+            <div class="logo-item"><img src="images/l3.jpg" alt="Recruiter 1"></div>
+            <div class="logo-item"><img src="images/l4.jpg" alt="Recruiter 1"></div>
+            <div class="logo-item"><img src="images/l4.jpg" alt="Recruiter 1"></div>
+            <div class="logo-item"><img src="images/l5.jpg" alt="Recruiter 1"></div>
         </div>
     </section>
 
