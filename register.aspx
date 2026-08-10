@@ -66,8 +66,13 @@
 
                         <label>Mobile Number</label>
                         <asp:TextBox ID="regPhone" runat="server" placeholder="Enter your mobile number" OnTextChanged="regPhone_TextChanged"></asp:TextBox>
+<<<<<<< HEAD
                         <%--                        <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Please Enter phone number in 10 digits." ControlToValidate="regPhone" Display="None" MaximumValue="13" MinimumValue="10"></asp:RangeValidator>--%>
                         <asp:RegularExpressionValidator ID="revphone" runat="server" Display="None" ErrorMessage="Please Enter Phone number in 10 digits." ValidationExpression="[0-9]{10}$" ControlToValidate="regPhone"></asp:RegularExpressionValidator>
+=======
+                        <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Please Enter phone number in 10 digits." ControlToValidate="regPhone" Display="None" MaximumValue="10" MinimumValue="10"></asp:RangeValidator>
+
+>>>>>>> a07d7b43e5df3d2a39d471b5037f413d3b0d14ab
                         <label>Program</label>
                         <asp:DropDownList ID="regCourse" runat="server">
                             <asp:ListItem>Select Program</asp:ListItem>

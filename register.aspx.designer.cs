@@ -87,13 +87,21 @@ namespace University
         protected global::System.Web.UI.WebControls.TextBox regPhone;
 
         /// <summary>
+<<<<<<< HEAD
         /// revphone control.
+=======
+        /// RangeValidator1 control.
+>>>>>>> a07d7b43e5df3d2a39d471b5037f413d3b0d14ab
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revphone;
+=======
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
+>>>>>>> a07d7b43e5df3d2a39d471b5037f413d3b0d14ab
 
         /// <summary>
         /// regCourse control.
