@@ -13,7 +13,7 @@
                 <input type="text" id="scholarshipSearch" placeholder="Search here..." />
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <button type="button" class="admin-btn-primary" id="addScholarshipBtn"><i class="fa-solid fa-plus"></i> Add New Scholarship</button>
+            <a href="admin-scholarships-add.aspx" class="admin-btn-primary"><i class="fa-solid fa-plus"></i> Add New Scholarship</a>
         </div>
     </div>
 
@@ -31,7 +31,7 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="scholarshipsTableBody">
                     <tr>
                         <td>1</td>
                         <td>Merit Scholarship</td>

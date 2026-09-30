@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="admin-dashboard.aspx.cs" Inherits="University.admin_dashboard" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="ContentPlaceHolderAdmin">
@@ -38,12 +39,12 @@
 
     <!--================ STUDENTS TABLE =================-->
 
-    <div class="admin-panel" id="students" style="margin-bottom:26px;">
+    <div class="admin-panel" id="students" style="margin-bottom: 26px;">
         <div class="admin-panel-head">
             <h3>Registered Students</h3>
-            <a href="register.aspx">+ Add Student</a>
+            <%--<a href="register.aspx">+ Add Student</a>--%>
         </div>
-        <div class="admin-table-wrap">
+        <%--<div class="admin-table-wrap">
             <table class="admin-table">
                 <thead>
                     <tr>
@@ -60,12 +61,45 @@
                     <!-- Rows injected by js/admin-dashboard.js -->
                 </tbody>
             </table>
-            <div class="admin-table-empty" id="studentsEmptyState" style="display:none;">
+            <div class="admin-table-empty" id="studentsEmptyState" style="display: none;">
                 No students have registered yet. New registrations from <strong>register.aspx</strong> will appear here automatically.
+           
             </div>
+        </div>--%>
+
+        <div class="grid">
+            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView2_SelectedIndexChanged">
+                <Columns>
+                    <asp:TemplateField HeaderText="STUDENT ID">
+                        <ItemTemplate>
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("Id") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="FULL NAME">
+                        <ItemTemplate>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="EMAIL">
+                        <ItemTemplate>
+                            <asp:Label ID="Label4" runat="server" Text='<%# Eval("Email") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="PHONE">
+                        <ItemTemplate>
+                            <asp:Label ID="Label3" runat="server" Text='<%# Eval("Mobile") %>'></asp:Label>
+
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="COURSE">
+                        <ItemTemplate>
+                            <asp:Label ID="Label5" runat="server" Text='<%# Eval("Program") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
         </div>
     </div>
-
     <!--================ APPLICATIONS PANEL =================-->
 
     <div class="admin-panel" id="applications">
@@ -116,7 +150,7 @@
                 </tbody>
             </table>
         </div>
-        <p style="padding:16px 26px; font-size:12.5px; color:#999;">Note: Application rows above are sample/demo data.</p>
+        <p style="padding: 16px 26px; font-size: 12.5px; color: #999;">Note: Application rows above are sample/demo data.</p>
     </div>
 
     <script src="js/admin-dashboard.js"></script>

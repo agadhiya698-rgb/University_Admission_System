@@ -5,12 +5,39 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
+
 namespace University
 {
     public partial class admin_contact : System.Web.UI.Page
     {
+        SqlConnection con;   //for connection
+        SqlDataAdapter da;   // for container
+        DataSet ds;     // for select
+        SqlCommand cmd;      //for insert, update, delete
+
+        string s = ConfigurationManager.ConnectionStrings["dbcon"].ConnectionString;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            getcon();
+            fillgrid();
+        }
+        void getcon()
+        {
+            con = new SqlConnection(s);
+            con.Open();
+        }
+        void fillgrid()
+        {
+            getcon();
+            da = new SqlDataAdapter("select * from contact_messages", con);
+            ds = new DataSet();
+            da.Fill(ds);
+            GridView1.DataSource = ds;
+            GridView1.DataBind();
 
         }
     }

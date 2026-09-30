@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.aspx" />
+    <Content Include="Images\delete_button.png" />
+    <Content Include="Images\edit_button.png" />
+    <Content Include="User_Side\about.aspx" />
     <Content Include="App_Data\registration_db.mdf" />
     <Content Include="App_Data\registration_db_log.ldf">
       <DependentUpon>registration_db.mdf</DependentUpon>
@@ -117,26 +119,46 @@
     <Content Include="Images\p4.jpg" />
     <Content Include="Images\placement.png" />
     <Content Include="Images\s1.jpeg" />
-    <Content Include="Placement.aspx" />
+    <Content Include="User_Side\Placement.aspx" />
     <Content Include="Register Now.png" />
-    <Content Include="student-selection.aspx" />
-    <Content Include="prominent-recruiters.aspx" />
-    <Content Include="programs.aspx" />
-    <Content Include="contact.aspx" />
-    <Content Include="campuslife.aspx" />
-    <Content Include="events.aspx" />
-    <Content Include="blog.aspx" />
-    <Content Include="faculty.aspx" />
-    <Content Include="scholarships.aspx" />
-    <Content Include="career.aspx" />
-    <Content Include="library.aspx" />
-    <Content Include="admission.aspx" />
-    <Content Include="studentportal.aspx" />
-    <Content Include="research.aspx" />
-    <Content Include="graduate.aspx" />
-    <Content Include="login.aspx" />
-    <Content Include="register.aspx" />
-    <Content Include="forgot-password.aspx" />
+    <Content Include="User_Side\student-selection.aspx" />
+    <Content Include="User_Side\prominent-recruiters.aspx" />
+    <Content Include="User_Side\programs.aspx" />
+    <Content Include="User_Side\bca.aspx" />
+    <Content Include="User_Side\mca.aspx" />
+    <Content Include="User_Side\bba.aspx" />
+    <Content Include="User_Side\mba.aspx" />
+    <Content Include="User_Side\btech.aspx" />
+    <Content Include="User_Side\llb.aspx" />
+    <Content Include="User_Side\ma.aspx" />
+    <Content Include="User_Side\mpharm.aspx" />
+    <Content Include="User_Side\mpt.aspx" />
+    <Content Include="User_Side\msc.aspx" />
+    <Content Include="User_Side\llm.aspx" />
+    <Content Include="User_Side\mtech.aspx" />
+    <Content Include="User_Side\bpharm.aspx" />
+    <Content Include="User_Side\bsc.aspx" />
+    <Content Include="User_Side\bpt.aspx" />
+    <Content Include="User_Side\ba.aspx" />
+    <Content Include="User_Side\contact.aspx" />
+    <Content Include="User_Side\campuslife.aspx" />
+    <Content Include="User_Side\view-gallery.aspx" />
+    <Content Include="User_Side\events.aspx" />
+    <Content Include="User_Side\blog.aspx" />
+    <Content Include="User_Side\faculty.aspx" />
+    <Content Include="User_Side\scholarships.aspx" />
+    <Content Include="User_Side\career.aspx" />
+    <Content Include="User_Side\library.aspx" />
+    <Content Include="User_Side\admission.aspx" />
+    <Content Include="User_Side\studentportal.aspx" />
+    <Content Include="User_Side\admindashboard.aspx" />
+    <Content Include="User_Side\studentdashboard.aspx" />
+    <Content Include="User_Side\research.aspx" />
+    <Content Include="User_Side\graduate.aspx" />
+    <Content Include="User_Side\login.aspx" />
+    <Content Include="User_Side\register.aspx" />
+    <Content Include="User_Side\apply-now.aspx" />
+    <Content Include="User_Side\forgot-password.aspx" />
     <Content Include="admin-login.aspx" />
     <Content Include="admin-dashboard.aspx" />
     <Content Include="admin-programs.aspx" />
@@ -147,6 +169,11 @@
     <Content Include="admin-faculty.aspx" />
     <Content Include="admin-events.aspx" />
     <Content Include="admin-scholarships.aspx" />
+    <Content Include="admin-events-add.aspx" />
+    <Content Include="admin-faculty-add.aspx" />
+    <Content Include="admin-gallery-add.aspx" />
+    <Content Include="admin-programs-add.aspx" />
+    <Content Include="admin-scholarships-add.aspx" />
     <Content Include="js\faculty.js" />
     <Content Include="js\admission.js" />
     <Content Include="js\site.js" />
@@ -170,6 +197,8 @@
     <Content Include="js\admin-contact.js" />
     <Content Include="js\admin-settings.js" />
     <Content Include="js\admin-admissions.js" />
+    <Content Include="js\apply-now.js" />
+    <Content Include="js\apply-popup.js" />
     <Content Include="js\admin-faculty.js" />
     <Content Include="js\admin-events.js" />
     <Content Include="js\admin-scholarships.js" />
@@ -182,156 +211,303 @@
     <Content Include="Images\campus3.jpg" />
     <Content Include="Images\hero.jpg" />
     <Content Include="Images\logo1.png" />
-    <Content Include="index.aspx" />
+    <Content Include="User_Side\index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="about.aspx.cs">
+    <Compile Include="User_Side\about.aspx.cs">
       <DependentUpon>about.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="about.aspx.designer.cs">
+    <Compile Include="User_Side\about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
+    <Compile Include="User_Side\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
+    <Compile Include="User_Side\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Placement.aspx.cs">
+    <Compile Include="User_Side\Placement.aspx.cs">
       <DependentUpon>Placement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Placement.aspx.designer.cs">
+    <Compile Include="User_Side\Placement.aspx.designer.cs">
       <DependentUpon>Placement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="student-selection.aspx.cs">
+    <Compile Include="User_Side\student-selection.aspx.cs">
       <DependentUpon>student-selection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="student-selection.aspx.designer.cs">
+    <Compile Include="User_Side\student-selection.aspx.designer.cs">
       <DependentUpon>student-selection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="prominent-recruiters.aspx.cs">
+    <Compile Include="User_Side\prominent-recruiters.aspx.cs">
       <DependentUpon>prominent-recruiters.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="prominent-recruiters.aspx.designer.cs">
+    <Compile Include="User_Side\prominent-recruiters.aspx.designer.cs">
       <DependentUpon>prominent-recruiters.aspx</DependentUpon>
     </Compile>
-    <Compile Include="programs.aspx.cs">
+    <Compile Include="User_Side\programs.aspx.cs">
       <DependentUpon>programs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="programs.aspx.designer.cs">
+    <Compile Include="User_Side\programs.aspx.designer.cs">
       <DependentUpon>programs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="contact.aspx.cs">
+    <Compile Include="User_Side\bca.aspx.cs">
+      <DependentUpon>bca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\bca.aspx.designer.cs">
+      <DependentUpon>bca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\mca.aspx.cs">
+      <DependentUpon>mca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\mca.aspx.designer.cs">
+      <DependentUpon>mca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\bba.aspx.cs">
+      <DependentUpon>bba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\bba.aspx.designer.cs">
+      <DependentUpon>bba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\mba.aspx.cs">
+      <DependentUpon>mba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\mba.aspx.designer.cs">
+      <DependentUpon>mba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\btech.aspx.cs">
+      <DependentUpon>btech.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\btech.aspx.designer.cs">
+      <DependentUpon>btech.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\llb.aspx.cs">
+      <DependentUpon>llb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\llb.aspx.designer.cs">
+      <DependentUpon>llb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\ma.aspx.cs">
+      <DependentUpon>ma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\ma.aspx.designer.cs">
+      <DependentUpon>ma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\mpharm.aspx.cs">
+      <DependentUpon>mpharm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\mpharm.aspx.designer.cs">
+      <DependentUpon>mpharm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\mpt.aspx.cs">
+      <DependentUpon>mpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\mpt.aspx.designer.cs">
+      <DependentUpon>mpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\msc.aspx.cs">
+      <DependentUpon>msc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\msc.aspx.designer.cs">
+      <DependentUpon>msc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\llm.aspx.cs">
+      <DependentUpon>llm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\llm.aspx.designer.cs">
+      <DependentUpon>llm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\mtech.aspx.cs">
+      <DependentUpon>mtech.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\mtech.aspx.designer.cs">
+      <DependentUpon>mtech.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\bpharm.aspx.cs">
+      <DependentUpon>bpharm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\bpharm.aspx.designer.cs">
+      <DependentUpon>bpharm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\bsc.aspx.cs">
+      <DependentUpon>bsc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\bsc.aspx.designer.cs">
+      <DependentUpon>bsc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\bpt.aspx.cs">
+      <DependentUpon>bpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\bpt.aspx.designer.cs">
+      <DependentUpon>bpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\ba.aspx.cs">
+      <DependentUpon>ba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\ba.aspx.designer.cs">
+      <DependentUpon>ba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="contact.aspx.designer.cs">
+    <Compile Include="User_Side\contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="campuslife.aspx.cs">
+    <Compile Include="User_Side\campuslife.aspx.cs">
       <DependentUpon>campuslife.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="campuslife.aspx.designer.cs">
+    <Compile Include="User_Side\campuslife.aspx.designer.cs">
       <DependentUpon>campuslife.aspx</DependentUpon>
     </Compile>
-    <Compile Include="events.aspx.cs">
+    <Compile Include="User_Side\view-gallery.aspx.cs">
+      <DependentUpon>view-gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\view-gallery.aspx.designer.cs">
+      <DependentUpon>view-gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\events.aspx.cs">
       <DependentUpon>events.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="events.aspx.designer.cs">
+    <Compile Include="User_Side\events.aspx.designer.cs">
       <DependentUpon>events.aspx</DependentUpon>
     </Compile>
-    <Compile Include="blog.aspx.cs">
+    <Compile Include="User_Side\blog.aspx.cs">
       <DependentUpon>blog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="blog.aspx.designer.cs">
+    <Compile Include="User_Side\blog.aspx.designer.cs">
       <DependentUpon>blog.aspx</DependentUpon>
     </Compile>
-    <Compile Include="faculty.aspx.cs">
+    <Compile Include="User_Side\faculty.aspx.cs">
       <DependentUpon>faculty.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="faculty.aspx.designer.cs">
+    <Compile Include="User_Side\faculty.aspx.designer.cs">
       <DependentUpon>faculty.aspx</DependentUpon>
     </Compile>
-    <Compile Include="scholarships.aspx.cs">
+    <Compile Include="User_Side\scholarships.aspx.cs">
       <DependentUpon>scholarships.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="scholarships.aspx.designer.cs">
+    <Compile Include="User_Side\scholarships.aspx.designer.cs">
       <DependentUpon>scholarships.aspx</DependentUpon>
     </Compile>
-    <Compile Include="career.aspx.cs">
+    <Compile Include="User_Side\career.aspx.cs">
       <DependentUpon>career.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="career.aspx.designer.cs">
+    <Compile Include="User_Side\career.aspx.designer.cs">
       <DependentUpon>career.aspx</DependentUpon>
     </Compile>
-    <Compile Include="library.aspx.cs">
+    <Compile Include="User_Side\library.aspx.cs">
       <DependentUpon>library.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="library.aspx.designer.cs">
+    <Compile Include="User_Side\library.aspx.designer.cs">
       <DependentUpon>library.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admission.aspx.cs">
+    <Compile Include="User_Side\admission.aspx.cs">
       <DependentUpon>admission.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admission.aspx.designer.cs">
+    <Compile Include="User_Side\admission.aspx.designer.cs">
       <DependentUpon>admission.aspx</DependentUpon>
     </Compile>
-    <Compile Include="studentportal.aspx.cs">
+    <Compile Include="User_Side\studentportal.aspx.cs">
       <DependentUpon>studentportal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="studentportal.aspx.designer.cs">
+    <Compile Include="User_Side\studentportal.aspx.designer.cs">
       <DependentUpon>studentportal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="research.aspx.cs">
+    <Compile Include="User_Side\admindashboard.aspx.cs">
+      <DependentUpon>admindashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\admindashboard.aspx.designer.cs">
+      <DependentUpon>admindashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\studentdashboard.aspx.cs">
+      <DependentUpon>studentdashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\studentdashboard.aspx.designer.cs">
+      <DependentUpon>studentdashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\research.aspx.cs">
       <DependentUpon>research.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="research.aspx.designer.cs">
+    <Compile Include="User_Side\research.aspx.designer.cs">
       <DependentUpon>research.aspx</DependentUpon>
     </Compile>
-    <Compile Include="graduate.aspx.cs">
+    <Compile Include="User_Side\graduate.aspx.cs">
       <DependentUpon>graduate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="graduate.aspx.designer.cs">
+    <Compile Include="User_Side\graduate.aspx.designer.cs">
       <DependentUpon>graduate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
+    <Compile Include="User_Side\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login.aspx.designer.cs">
+    <Compile Include="User_Side\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="register.aspx.cs">
+    <Compile Include="User_Side\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="register.aspx.designer.cs">
+    <Compile Include="User_Side\register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="forgot-password.aspx.cs">
+    <Compile Include="User_Side\apply-now.aspx.cs">
+      <DependentUpon>apply-now.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Side\apply-now.aspx.designer.cs">
+      <DependentUpon>apply-now.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Side\forgot-password.aspx.cs">
       <DependentUpon>forgot-password.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="forgot-password.aspx.designer.cs">
+    <Compile Include="User_Side\forgot-password.aspx.designer.cs">
       <DependentUpon>forgot-password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin-login.aspx.cs">
       <DependentUpon>admin-login.aspx</DependentUpon>
@@ -396,6 +572,41 @@
     <Compile Include="admin-events.aspx.designer.cs">
       <DependentUpon>admin-events.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin-events-add.aspx.cs">
+      <DependentUpon>admin-events-add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-events-add.aspx.designer.cs">
+      <DependentUpon>admin-events-add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-faculty-add.aspx.cs">
+      <DependentUpon>admin-faculty-add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-faculty-add.aspx.designer.cs">
+      <DependentUpon>admin-faculty-add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-gallery-add.aspx.cs">
+      <DependentUpon>admin-gallery-add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-gallery-add.aspx.designer.cs">
+      <DependentUpon>admin-gallery-add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-programs-add.aspx.cs">
+      <DependentUpon>admin-programs-add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-programs-add.aspx.designer.cs">
+      <DependentUpon>admin-programs-add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-scholarships-add.aspx.cs">
+      <DependentUpon>admin-scholarships-add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-scholarships-add.aspx.designer.cs">
+      <DependentUpon>admin-scholarships-add.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin-scholarships.aspx.cs">
       <DependentUpon>admin-scholarships.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -411,18 +622,19 @@
       <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site1.Master.cs">
+    <Compile Include="User_Side\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site1.Master.designer.cs">
+    <Compile Include="User_Side\Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Site1.Master" />
+    <Content Include="User_Side\Site1.Master" />
     <Content Include="AdminMaster.Master" />
+    <Content Include="Default.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

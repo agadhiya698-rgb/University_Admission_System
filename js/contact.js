@@ -1,66 +1,68 @@
-document.addEventListener('DOMContentLoaded', function () {
+// Global function - referenced directly from the LinkButton's OnClientClick
+// in contact.aspx (OnClientClick="return validateContactForm();").
+// Returning true lets the normal postback continue to contactSendBtn_Click
+// in contact.aspx.cs (which saves the message to the database).
+// Returning false cancels the postback so nothing invalid ever reaches the server.
+function validateContactForm() {
 
-    var sendBtn = document.getElementById('contactSendBtn');
+    var errorBox = document.getElementById('contactError');
+
     var nameField = document.getElementById('contactName');
     var emailField = document.getElementById('contactEmail');
+    var phoneField = document.getElementById('contactPhone');
     var subjectField = document.getElementById('contactSubject');
     var messageField = document.getElementById('contactMessage');
 
-    if (!sendBtn) return;
+    function showError(message) {
+        if (!errorBox) return;
+        errorBox.textContent = message;
+        errorBox.className = 'auth-error show';
+    }
 
     function isValidEmail(value) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
     }
 
-    function clearErrors() {
-        [nameField, emailField, subjectField, messageField].forEach(function (field) {
-            field.style.borderColor = '';
-        });
+    if (errorBox) errorBox.className = 'auth-error';
+
+    var name = nameField ? nameField.value.trim() : '';
+    var email = emailField ? emailField.value.trim() : '';
+    var phone = phoneField ? phoneField.value.trim() : '';
+    var subject = subjectField ? subjectField.value.trim() : '';
+    var message = messageField ? messageField.value.trim() : '';
+
+    if (name === '' || email === '' || phone === '' || subject === '' || message === '') {
+        showError('Please fill in all fields before sending your message.');
+        return false;
     }
 
-    sendBtn.addEventListener('click', function () {
+    if (!isValidEmail(email)) {
+        showError('Please enter a valid email address.');
+        return false;
+    }
 
-        clearErrors();
+    if (!/^[0-9]{10}$/.test(phone)) {
+        showError('Please enter a valid 10-digit mobile number.');
+        return false;
+    }
 
-        var name = nameField.value.trim();
-        var email = emailField.value.trim();
-        var subject = subjectField.value.trim();
-        var message = messageField.value.trim();
+    // All good - allow the LinkButton's normal postback to proceed to
+    // contactSendBtn_Click, which saves the message to the database.
+    return true;
+}
 
-        var firstInvalid = null;
+document.addEventListener('DOMContentLoaded', function () {
 
-        if (name === '') firstInvalid = firstInvalid || nameField;
-        if (email === '' || !isValidEmail(email)) firstInvalid = firstInvalid || emailField;
-        if (subject === '') firstInvalid = firstInvalid || subjectField;
-        if (message === '') firstInvalid = firstInvalid || messageField;
+    var fields = ['contactName', 'contactEmail', 'contactPhone', 'contactSubject', 'contactMessage'];
+    var errorBox = document.getElementById('contactError');
 
-        if (name === '') nameField.style.borderColor = '#a00016';
-        if (email === '' || !isValidEmail(email)) emailField.style.borderColor = '#a00016';
-        if (subject === '') subjectField.style.borderColor = '#a00016';
-        if (message === '') messageField.style.borderColor = '#a00016';
-
-        if (firstInvalid) {
-            firstInvalid.focus();
-            alert('Please fill in all fields with a valid email address before sending your message.');
-            return;
+    fields.forEach(function (id) {
+        var field = document.getElementById(id);
+        if (field) {
+            field.addEventListener('input', function () {
+                if (errorBox) errorBox.className = 'auth-error';
+            });
         }
-
-        if (typeof EUAuth !== 'undefined') {
-            EUAuth.saveContactMessage(name, email, subject, message);
-        }
-
-        alert('Thank you, ' + name + '! Your message has been received. Our team will get back to you soon.');
-
-        nameField.value = '';
-        emailField.value = '';
-        subjectField.value = '';
-        messageField.value = '';
-    });
-
-    [nameField, emailField, subjectField, messageField].forEach(function (field) {
-        field.addEventListener('input', function () {
-            field.style.borderColor = '';
-        });
     });
 
 });

@@ -13,7 +13,7 @@
                 <input type="text" id="eventSearch" placeholder="Search here..." />
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <button type="button" class="admin-btn-primary" id="addEventBtn"><i class="fa-solid fa-plus"></i> Add New Event</button>
+            <a href="admin-events-add.aspx" class="admin-btn-primary"><i class="fa-solid fa-plus"></i> Add New Event</a>
         </div>
     </div>
 
@@ -31,7 +31,7 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="eventsTableBody">
                     <tr>
                         <td>1</td>
                         <td>Annual Tech Fest 2026</td>

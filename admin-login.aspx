@@ -7,7 +7,7 @@
     <title>Admin Portal - Everest University</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css?v=2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="admin-login-body">
@@ -57,7 +57,7 @@
                         <button type="button" id="adminLoginBtn">Login to Dashboard <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
                     </div>
 
-                    <p class="admin-login-footnote">Not an admin? <a href="login.aspx">Student Login</a></p>
+                    <p class="admin-login-footnote">Not an admin? <a href="User_Side/login.aspx">Student Login</a></p>
                     <p class="admin-login-demo-note">Demo credentials — Username: <b>admin</b> &nbsp; Password: <b>Admin@123</b></p>
 
                 </div>

@@ -51,6 +51,19 @@ var EUAuth = (function () {
         return 'EU' + year + '-' + random;
     }
 
+    function getGenericList(key) {
+        try {
+            var data = localStorage.getItem(key);
+            return data ? JSON.parse(data) : [];
+        } catch (e) {
+            return [];
+        }
+    }
+
+    function saveGenericList(key, list) {
+        localStorage.setItem(key, JSON.stringify(list));
+    }
+
     return {
 
         /* ---------- Registration ---------- */
@@ -166,7 +179,28 @@ var EUAuth = (function () {
             return { success: true };
         },
 
-        getAllMessages: getMessages
+        getAllMessages: getMessages,
+
+        /* ---------- Generic list storage (used by Admin Panel "Add New" forms) ---------- */
+        /* Works for programs, events, faculty, gallery albums, admissions, scholarships etc. */
+
+        getItems: function (key) {
+            return getGenericList(key);
+        },
+
+        addItem: function (key, item) {
+            var list = getGenericList(key);
+            list.unshift(item);
+            saveGenericList(key, list);
+            return { success: true };
+        },
+
+        deleteItem: function (key, index) {
+            var list = getGenericList(key);
+            list.splice(index, 1);
+            saveGenericList(key, list);
+            return { success: true };
+        }
 
     };
 

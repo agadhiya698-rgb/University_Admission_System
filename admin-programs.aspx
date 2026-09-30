@@ -13,7 +13,7 @@
                 <input type="text" id="programSearch" placeholder="Search here..." />
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <button type="button" class="admin-btn-primary" id="addProgramBtn"><i class="fa-solid fa-plus"></i> Add New Program</button>
+            <a href="admin-programs-add.aspx" class="admin-btn-primary"><i class="fa-solid fa-plus"></i> Add New Program</a>
         </div>
     </div>
 
@@ -30,7 +30,7 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="programsTableBody">
                     <tr>
                         <td>1</td>
                         <td>BCA</td>

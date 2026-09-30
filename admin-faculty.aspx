@@ -13,7 +13,7 @@
                 <input type="text" id="facultySearch" placeholder="Search here..." />
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <button type="button" class="admin-btn-primary" id="addFacultyBtn"><i class="fa-solid fa-plus"></i> Add New Faculty</button>
+            <a href="admin-faculty-add.aspx" class="admin-btn-primary"><i class="fa-solid fa-plus"></i> Add New Faculty</a>
         </div>
     </div>
 
@@ -31,7 +31,7 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="facultyTableBody">
                     <tr>
                         <td>1</td>
                         <td>Dr. Ramesh Patel</td>

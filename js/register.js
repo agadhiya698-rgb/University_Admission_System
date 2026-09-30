@@ -1,118 +1,87 @@
-document.addEventListener('DOMContentLoaded', function () {
+// Global function - referenced directly from the LinkButton's OnClientClick
+// in register.aspx (OnClientClick="return validateRegisterForm();").
+// Returning true lets the normal postback continue to Button1_Click in
+// register.aspx.cs (which saves the record to the database and redirects
+// to login.aspx). Returning false cancels the postback so nothing invalid
+// ever reaches the server.
+function validateRegisterForm() {
 
-    var formContainer = document.getElementById('studentRegisterForm');
-    if (!formContainer) return;
+    var errorBox = document.getElementById('registerError');
 
-    // NOTE: These fields are real ASP.NET server controls (asp:TextBox /
-    // asp:DropDownList / asp:CheckBox / asp:Button), so we can't rely on
-    // the server-side ID or on attributes like "placeholder" always
-    // surviving rendering exactly. Instead we pick each field up by its
-    // input "type" and its fixed position in the form, which always
-    // matches the field order in register.aspx:
-    //   1) Full Name (text)  2) Email  3) Mobile (text)
-    //   4) Program (select)  5) Password  6) Confirm Password
-    //   7) Terms (checkbox)  8) Register button (submit)
-
-    var allInputs = Array.prototype.slice.call(formContainer.querySelectorAll('input'));
-
-    function byType(type) {
-        return allInputs.filter(function (el) {
-            return (el.getAttribute('type') || 'text').toLowerCase() === type;
-        });
-    }
-
-    var textLike = byType('text');
-    var emailLike = byType('email');
-    var passwordLike = byType('password');
-    var checkboxLike = byType('checkbox');
-    var submitLike = allInputs.filter(function (el) {
-        var t = (el.getAttribute('type') || '').toLowerCase();
-        return t === 'submit' || t === 'button';
-    });
-
-    var registerBtn = submitLike[0] || formContainer.querySelector('button');
-    if (!registerBtn) return;
-
-    var card = formContainer.closest('.auth-card') || document;
-    var errorBox = card.querySelector('.auth-error');
-    var successBox = card.querySelector('.auth-success');
-
-    var fullNameField = textLike[0];
-    var phoneField = textLike[1];
-    var emailField = emailLike[0] || textLike[2];
-    var courseField = formContainer.querySelector('select');
-    var passwordField = passwordLike[0];
-    var confirmPasswordField = passwordLike[1];
-    var termsField = checkboxLike[0];
-
-    function isValidEmail(value) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-    }
+    var fullNameField = document.getElementById('regFullName');
+    var emailField = document.getElementById('regEmail');
+    var phoneField = document.getElementById('regPhone');
+    var courseField = document.getElementById('regCourse');
+    var passwordField = document.getElementById('regPassword');
+    var confirmPasswordField = document.getElementById('regConfirmPassword');
+    var termsField = document.getElementById('regTerms');
 
     function showError(message) {
-        if (successBox) successBox.classList.remove('show');
         if (!errorBox) return;
         errorBox.textContent = message;
         errorBox.classList.add('show');
     }
 
-    function clearError() {
-        if (errorBox) errorBox.classList.remove('show');
+    function isValidEmail(value) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
     }
 
-    // This only BLOCKS the postback when something is invalid.
-    // When everything looks fine, it does nothing extra and lets the
-    // Button submit normally to Button1_Click in register.aspx.cs,
-    // which saves the record to the database and redirects to login.aspx.
-    registerBtn.addEventListener('click', function (e) {
+    if (errorBox) errorBox.classList.remove('show');
 
-        clearError();
+    var fullName = fullNameField ? fullNameField.value.trim() : '';
+    var email = emailField ? emailField.value.trim() : '';
+    var phone = phoneField ? phoneField.value.trim() : '';
+    var course = courseField ? courseField.value : '';
+    var password = passwordField ? passwordField.value : '';
+    var confirmPassword = confirmPasswordField ? confirmPasswordField.value : '';
 
-        var fullName = fullNameField ? fullNameField.value.trim() : '';
-        var email = emailField ? emailField.value.trim() : '';
-        var phone = phoneField ? phoneField.value.trim() : '';
-        var course = courseField ? courseField.value : '';
-        var password = passwordField ? passwordField.value : '';
-        var confirmPassword = confirmPasswordField ? confirmPasswordField.value : '';
+    if (fullName === '' || email === '' || phone === '' || course === '' || course === 'Select Program' || password === '' || confirmPassword === '') {
+        showError('Please fill in all fields to create your account.');
+        return false;
+    }
 
-        if (fullName === '' || email === '' || phone === '' || course === '' || course === 'Select Program' || password === '' || confirmPassword === '') {
-            e.preventDefault();
-            showError('Please fill in all fields to create your account.');
-            return;
+    if (!isValidEmail(email)) {
+        showError('Please enter a valid email address.');
+        return false;
+    }
+
+    if (!/^[0-9]{10}$/.test(phone)) {
+        showError('Please enter a valid 10-digit mobile number.');
+        return false;
+    }
+
+    if (password.length < 6) {
+        showError('Password must be at least 6 characters long.');
+        return false;
+    }
+
+    if (password !== confirmPassword) {
+        showError('Passwords do not match. Please re-check and try again.');
+        return false;
+    }
+
+    if (termsField && !termsField.checked) {
+        showError('Please agree to the Terms & Conditions and Privacy Policy to continue.');
+        return false;
+    }
+
+    // All good - allow the LinkButton's normal postback to proceed to
+    // Button1_Click, which saves the record to the database.
+    return true;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    var fields = ['regFullName', 'regEmail', 'regPhone', 'regPassword', 'regConfirmPassword'];
+    var errorBox = document.getElementById('registerError');
+
+    fields.forEach(function (id) {
+        var field = document.getElementById(id);
+        if (field) {
+            field.addEventListener('input', function () {
+                if (errorBox) errorBox.classList.remove('show');
+            });
         }
-
-        if (!isValidEmail(email)) {
-            e.preventDefault();
-            showError('Please enter a valid email address.');
-            return;
-        }
-
-        if (!/^[0-9]{10}$/.test(phone)) {
-            e.preventDefault();
-            showError('Please enter a valid 10-digit mobile number.');
-            return;
-        }
-
-        if (password.length < 6) {
-            e.preventDefault();
-            showError('Password must be at least 6 characters long.');
-            return;
-        }
-
-        if (password !== confirmPassword) {
-            e.preventDefault();
-            showError('Passwords do not match. Please re-check and try again.');
-            return;
-        }
-
-        if (termsField && !termsField.checked) {
-            e.preventDefault();
-            showError('Please agree to the Terms & Conditions and Privacy Policy to continue.');
-            return;
-        }
-
-        // All good - let the click continue so the Button's normal
-        // postback fires and the server saves the record to the database.
     });
 
 });
