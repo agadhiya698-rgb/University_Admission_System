@@ -1,0 +1,465 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="University.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>University Website</title>
+                    <link rel="stylesheet" href="../css/index.css?v=2">
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                </head>
+                <body>
+
+                    <!-- HEADER -->
+                    <header>
+                        <div class="logo">
+                            <img src="../images/logo1.png" alt="">
+                        </div>
+
+                        <nav>
+                            <ul>
+                                <li class="has-dropdown"><a href="index.aspx">Home</a></li>
+
+                                <li class="has-dropdown">
+                                    <a href="about.aspx">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="nav-dropdown">
+                                        <li><a href="about.aspx">About University</a></li>
+                                        <li><a href="faculty.aspx">Our Faculty</a></li>
+                                        <li><a href="research.aspx">Research</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown">
+                                    <a href="programs.aspx">Academic <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="nav-dropdown">
+                                        <li class="has-submenu">
+                                            <a href="programs.aspx">Computer Application <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="nav-submenu">
+                                                <li><a href="bca.aspx">BCA</a></li>
+                                                <li><a href="mca.aspx">MCA</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="programs.aspx">Management <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="nav-submenu">
+                                                <li><a href="bba.aspx">BBA</a></li>
+                                                <li><a href="mba.aspx">MBA</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="programs.aspx">Engineering <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="nav-submenu">
+                                                <li><a href="btech.aspx">B.Tech</a></li>
+                                                <li><a href="mtech.aspx">M.Tech</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="programs.aspx">Arts &amp; Humanities <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="nav-submenu">
+                                                <li><a href="ba.aspx">BA</a></li>
+                                                <li><a href="ma.aspx">MA</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="programs.aspx">Health Sciences <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="nav-submenu">
+                                                <li><a href="bpharm.aspx">B.Pharm</a></li>
+                                                <li><a href="mpharm.aspx">M.Pharm</a></li>
+                                                <li><a href="bpt.aspx">BPT</a></li>
+                                                <li><a href="mpt.aspx">MPT</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="programs.aspx">Science <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="nav-submenu">
+                                                <li><a href="bsc.aspx">B.Sc</a></li>
+                                                <li><a href="msc.aspx">M.Sc</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-submenu">
+                                            <a href="programs.aspx">Law <i class="fa-solid fa-chevron-right"></i></a>
+                                            <ul class="nav-submenu">
+                                                <li><a href="llb.aspx">LLB</a></li>
+                                                <li><a href="llm.aspx">LLM</a></li>
+                                            </ul>
+                                        </li>
+                                       <%-- <li><a href="library.aspx">Library</a></li>
+                                        <li><a href="scholarships.aspx">Scholarships</a></li>--%>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown">
+                                    <a href="admission.aspx">Admission <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="nav-dropdown">
+                                        <li><a href="admission.aspx">Admission Process</a></li>
+                                        <li><a href="graduate.aspx">Graduate Admission</a></li>
+                                        <li><a href="scholarships.aspx">Scholarships</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown">
+                                    <a href="campuslife.aspx">Campus Life <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="nav-dropdown">
+                                        <li><a href="campuslife.aspx">Campus Overview</a></li>
+                                        <li><a href="events.aspx">Events</a></li>
+                                        <li><a href="library.aspx">Library</a></li>
+                                        <li><a href="view-gallery.aspx">Gallery</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown"><a href="blog.aspx">Blog</a></li>
+
+                                <li class="has-dropdown">
+                                    <a href="Placement.aspx">Placement <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="nav-dropdown">
+                                        <li><a href="Placement.aspx">About Us</a></li>
+                                        <li><a href="student-selection.aspx">Student Selection</a></li>
+                                        <li><a href="prominent-recruiters.aspx">Prominent Recruiters</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown"><a href="contact.aspx">Contact</a></li>
+
+                                <li class="has-dropdown">
+                                    <a href="#">More <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="nav-dropdown">
+                                        <li><a href="studentportal.aspx">Student Portal</a></li>
+                                        <li><a href="login.aspx">Student Login</a></li>
+                                        <li><a href="../admin-login.aspx">Admin Login</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="icons">
+                            <%--<i class="fa-solid fa-magnifying-glass"></i>--%>
+                            <%--<a href="login.aspx" style="color: inherit;"><i class="fa-regular fa-user"></i></a>--%>
+                            <%--<i class="fa-solid fa-bars" id="menuToggle"></i>--%>
+                        </div>
+                    </header>
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <!-- HERO -->
+                <section class="hero">
+                    <img src="../images/hero.jpg" alt="Hero" class="hero-bg">
+
+                    <div class="overlay"></div>
+
+                    <div class="hero-content">
+                        <p>Knowledge Meets Innovation</p>
+
+                        <h1>Unleashing Potential
+                            <br>
+                            Fostering <span>Excellence</span>
+                        </h1>
+
+                        <a href="#" class="btn">Discover Our Programs →
+                        </a>
+                    </div>
+
+                    <div class="stats">
+                        <div>
+                            <h2>90%</h2>
+                            <p>Placement Success Rate</p>
+                        </div>
+
+                        <div>
+                            <h2>Top 10</h2>
+                            <p>Universities for Future Leaders</p>
+                        </div>
+
+                        <div>
+                            <h2>No.1</h2>
+                            <p>Academic Excellence</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ABOUT -->
+                <section class="about">
+
+                    <div class="about-images">
+
+                        <img src="../images/about.jpg" class="img-left">
+
+                        <img src="../images/about1.jpg" class="img-right">
+
+                        <!-- <div class="experience-badge">
+        <span>Since</span>
+        <h3>1995</h3>
+    </div> -->
+
+                    </div>
+
+                    <div class="about-content">
+
+                        <span>About University</span>
+
+                        <h2>Shaping Minds,<br>
+                            Building <span>Futures</span>
+                        </h2>
+
+                        <p>
+                            We believe in the transformative power of education
+            and empower students to realize their fullest
+            potential.
+                        </p>
+
+                        <div class="cards">
+
+                            <div class="card">
+                                <h3>Our Mission</h3>
+                                <p>
+                                    To provide transformative education and
+                    develop future leaders.
+                                </p>
+                            </div>
+
+                            <div class="card">
+                                <h3>Our Vision</h3>
+                                <p>
+                                    To be globally recognized university for
+                    academic excellence.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="btn">More About Us →</a>
+
+                    </div>
+
+                </section>
+
+                <!-- PROGRAMS -->
+                <section class="programs">
+
+                    <h2>Academics & Programs</h2>
+                    <p>Explore a wide range of programs</p>
+
+                    <div class="program-grid">
+
+                        <div class="program-card">
+                            <h3>Undergraduate</h3>
+                            <ul>
+                                <li>Business Administration</li>
+                                <li>Computer Science</li>
+                                <li>Engineering</li>
+                                <li>Social Sciences</li>
+                            </ul>
+                        </div>
+
+                        <div class="program-card active">
+                            <h3>Graduate</h3>
+                            <ul>
+                                <li>MBA Programs</li>
+                                <li>M.Sc Programs</li>
+                                <li>MA Programs</li>
+                                <li>Research Programs</li>
+                            </ul>
+                        </div>
+
+                        <div class="program-card">
+                            <h3>Lifelong Learning</h3>
+                            <ul>
+                                <li>Online Degrees</li>
+                                <li>Certificates</li>
+                                <li>Short Courses</li>
+                                <li>Workshops</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- CAMPUS LIFE -->
+                <section class="campus">
+
+                    <h2>Campus Life</h2>
+                    <p class="campus-subtitle">
+                        Where experiences shape your future
+                    </p>
+                    <div class="campus-grid">
+
+                        <div class="campus-card">
+                            <img src="../images/campus1.jpg">
+                            <h4>Student Clubs</h4>
+                        </div>
+
+                        <div class="campus-card">
+                            <img src="../images/campus2.jpg">
+                            <h4>Community</h4>
+                        </div>
+
+                        <div class="campus-card">
+                            <img src="../images/campus3.jpg">
+                            <h4>Sports & Recreation</h4>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- CTA -->
+                <section class="cta">
+
+                    <div>
+                        <h2>Ready to Start Your Journey?</h2>
+                        <p>
+                            Join thousands of students already building
+            their future with us.
+                        </p>
+                    </div>
+
+                    <button>Apply Now →</button>
+
+                </section>
+
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                <footer class="footer">
+
+                    <div class="container">
+
+                        <div class="footer-grid">
+
+                            <!-- Logo -->
+
+                            <div class="footer-col">
+
+                                <h2 class="footer-logo">EVEREST
+                    <span>UNIVERSITY</span>
+                                </h2>
+
+                                <p>
+                                    Empowering minds, inspiring excellence and preparing
+                    future leaders through quality education.
+                                </p>
+
+                                <div class="social-icons">
+
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Academics -->
+
+                            <div class="footer-col">
+
+                                <h3>Academics</h3>
+
+                                <ul>
+
+                                    <li><a href="graduate.aspx">Graduate</a></li>
+
+                                    <li><a href="research.aspx">Research</a></li>
+
+                                    <li><a href="scholarships.aspx">Scholarship</a></li>
+
+                                    <li><a href="library.aspx">Library</a></li>
+
+                                    <%--<li><a href="programs.aspx">Programs</a></li>--%>
+
+                                    <li><a href="faculty.aspx">Faculty</a></li>
+
+                                </ul>
+
+                            </div>
+
+                            <!-- Resources -->
+
+                            <div class="footer-col">
+
+                                <h3>Resources</h3>
+
+                                <ul>
+
+                                    <li><a href="career.aspx">Career</a></li>
+
+                                    <li><a href="campuslife.aspx">Campus</a></li>
+
+                                    <li><a href="studentportal.aspx">Student Portal</a></li>
+
+                                    <li><a href="events.aspx">Events</a></li>
+
+                                    <li><a href="contact.aspx">Contact Us</a></li>
+
+                                </ul>
+
+                            </div>
+
+                            <!-- Newsletter -->
+
+                            <div class="footer-col">
+                                <h3>Contact Info</h3>
+                                <p>
+                                    <i class="fas fa-map-marker-alt"></i>  123 University Avenue,<br>
+                                    Knowledge City, 360005
+                                </p><br />
+                                <p>
+                                    <i class="fas fa-envelope"></i> info@everest.edu
+                                </p><br />
+                                <p>
+                                    <i class="fas fa-phone-alt"></i> +91 98765 43210
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="footer-bottom">
+
+                            <p>
+                                © 2025 Everest University. All Rights Reserved.
+                            </p>
+
+                            <div>
+
+                                <a href="#">Privacy Policy</a>
+
+                                |
+
+                <a href="#">Terms & Conditions</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </footer>
+                <script src="../js/site.js"></script>
+</body>
+</html>
+
+</asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
